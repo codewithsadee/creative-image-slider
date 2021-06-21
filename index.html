@@ -1,0 +1,54 @@
+<!DOCTYPE htm>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Preloading all images -->
+  <link rel="preload" as="image" href="./images/leopard.jpg">
+  <link rel="preload" as="image" href="./images/brown-bridge.jpg">
+
+  <link rel="stylesheet" href="./min-css/style.min.css">
+  <title>Image Slider</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="next" onclick="next()">NEXT <span class="line"></span></div>
+    <div class="prev" onclick="prev()"><span class="line"></span> PREV</div>
+
+    <div class="slider-box">
+
+      <div class="slider-img slider-img-1" onmousewheel="next()">
+        <div class="vintage-effect"></div>
+        <img src="./images/leopard.jpg" alt="Leopard">
+        <div class="img-title">
+          <h1><span>LEOPARD</span> IN JUNGLE</h1>
+        </div>
+      </div>
+
+      <div class="slider-img slider-img-2" onmousewheel="prev()">
+        <div class="vintage-effect"></div>
+        <img src="./images/brown-bridge.jpg" alt="Leopard">
+
+        <div class="img-title">
+          <h1>BROWN <span>BRIDGE</span></h1>
+        </div>
+      </div>
+
+      <div class="progress-bar-box">
+        <div class="text-top">1</div>
+        <div class="progress-bar"><span class="progress"></span></div>
+        <div class="text-bottom">2</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="imageSlider.min.js"></script>
+</body>
+
+</html>
